@@ -39,6 +39,12 @@ public class Feedback {
         this.feedbackMessage = feedbackMessage;
     }
 
+    // new constructor used in the CommandLineRunner, to populate the database
+    public Feedback(String name, String feedbackMessage) {
+        this.name = name;
+        this.feedbackMessage = feedbackMessage;
+    }
+
     public int getId() {
         return id;
     }

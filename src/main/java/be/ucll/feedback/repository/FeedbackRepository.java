@@ -16,7 +16,7 @@ public interface FeedbackRepository extends JpaRepository<Feedback, Integer> {
     /*
     Convention over configuration!
     You can define searches on the database on any field (parameter) you have in
-    oyur entity (Feedback in our case - id, name and feedbackMessage).
+    your entity (Feedback in our case - id, name and feedbackMessage).
     The rule is that you define the method starting with "findBy" and then tack
     the name of the parameter on to it, in this case "name". Since this uses camelcase,
     we end up with "findByName". This needs to return a List of Feedback.
